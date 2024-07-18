@@ -31,7 +31,7 @@ function Projects() {
                         </div>
                     </div>
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer" className='redirect'>
+                <a href="https://github.com/Varun1324/netflix-clone" target="_blank" rel="noopener noreferrer" className='redirect'>
                     <div className="p1">
                         <h3>Netflix Clone</h3>
                         <div className="prg">

@@ -30,7 +30,7 @@ function Hero() {
                     </a>
                 </span>
                 <p className={styles.description}>To work in an environment which encourages me to succeed and grow professionally where I can utilize my skils and knowledge appropriately.</p>
-                <a href="#" download>
+                <a href="https://github.com/Varun1324" download>
                     <button>Resume</button>
                 </a>
                 <span>
