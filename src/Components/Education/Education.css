@@ -1,0 +1,56 @@
+.container{
+    width: 100dvw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 20px;
+}
+.edu{
+    margin: 20px 20px;
+    display: flex;
+    gap: 10px;
+    h2{
+        font-weight: bold;
+        margin: 0;
+    }
+    #cap{
+        font-size: 25px;
+    }
+}
+.dot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #cap{
+        font-size: 25px;
+    }
+}
+.btech, .inter, .ssc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .dot{
+        display: none;
+    }
+    .btech, .inter, .ssc{
+        flex: 1 1 100%; /* Each box takes full width in column mode */
+    }
+    .title{
+        text-align: center;
+    }
+}
