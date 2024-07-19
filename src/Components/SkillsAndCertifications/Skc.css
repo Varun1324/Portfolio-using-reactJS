@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .main-cont {
     display: flex;
     justify-content: space-between;
@@ -8,6 +9,7 @@
     flex: 1;
     padding: 10px;
     margin: 10px;
+    font-family: Montserrat;
 }
   
 @media (max-width: 768px) {

@@ -1,4 +1,7 @@
-.container{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,25 +9,32 @@
     text-align: center;
     height: 85dvh;
     min-height: 500px;
-    .hero{
+
+    .hero {
         max-width: 250px;
     }
-    span{
+
+    span {
         display: flex;
         gap: 25px;
         justify-content: center;
-        a{
+
+        a {
             margin: 0;
-            img{
-                    width: 30px;
+
+            img {
+                width: 30px;
             }
         }
+        font-family: Montserrat;
     }
-    a{
+
+    a {
         width: fit-content;
         align-self: center;
     }
-    button{
+
+    button {
         background-color: #2ec4b6;
         border: none;
         border-radius: 25px;
@@ -33,36 +43,47 @@
         height: 35px;
         font-size: 15px;
         font-weight: bold;
-        box-shadow: 0 4px 4px rgba(0, 0, 0,0.25);
+        font-family: Montserrat;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         transition: box-shadow 200ms ease-in-out transform ease-in-out;
     }
-    button:hover{
+
+    button:hover {
         transform: scale(1.05);
     }
 }
 
-.description{
+.description {
     max-width: 45ch;
+    font-family: Raleway;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    h1{
+        font-family: Roboto;
+    }
+    h3{
+        font-family: Montserrat;
+    }
 }
-.heroicons{
+
+.heroicons {
     font-size: 35px;
 }
 
 @media (width>=768px) {
-    .container{
+    .container {
         flex-direction: row-reverse;
         align-items: center;
-        justify-content: space-evenly; 
+        justify-content: space-evenly;
     }
-    .hero{
+
+    .hero {
         max-width: 350px;
         width: 350px;
     }
