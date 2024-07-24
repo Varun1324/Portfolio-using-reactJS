@@ -2,7 +2,7 @@ import React from 'react';
 import './Projects.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChartBar } from '@fortawesome/free-solid-svg-icons';
-import { faHtml5, faCss3, faJs, faPython, faReact, faNode, faBootstrap } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3, faJs, faPython, faReact, faNode} from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 function Projects() {
@@ -49,17 +49,16 @@ function Projects() {
                         </div>
                     </div>
                 </a>
-                <a href="https://genaiinsight.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" className='redirect'>
+                <a href="https://github.com/Varun1324/Price-Grabber-for-online-shopping" target="_blank" rel="noopener noreferrer" className='redirect'>
                     <div className="p1">
-                        <h3>Dog Breed Identifier Using Generative AI</h3>
+                        <h3>Price-Grabber-for-online-shopping</h3>
                         <div className="prg">
-                            Technologies Used : <FontAwesomeIcon icon={faHtml5} style={{ color: "#ff7b00" }} id="symbols"/> <FontAwesomeIcon icon={faBootstrap} style={{ color: "#7b24ff" }} id="symbols"/> <FontAwesomeIcon icon={faPython} style={{ color: "#4b8bbe" }} id="symbols"/>
+                            Technologies Used : <FontAwesomeIcon icon={faHtml5} style={{ color: "#ff7b00" }} id="symbols"/> <FontAwesomeIcon icon={faCss3} style={{ color: "#1a6eff" }} id="symbols"/> <FontAwesomeIcon icon={faPython} style={{ color: "#4b8bbe" }} id="symbols"/>
                         </div>
                         <div className="descp">
-                            A Python-based project that uses a Generative AI API to identify dog breeds from images. Upload a dog image to receive an accurate breed classification
-                        </div>
+                            Price Grabber is a web application designed to help users compare prices from various online shopping platforms. The application uses Selenium for web scraping to collect price data and Flask as the backend framework to serve the data.                        </div>
                         <div className="git">
-                            <a href="https://github.com/Varun1324/Dog-breed-identifier-using-GenAI">
+                            <a href="https://github.com/Varun1324/Price-Grabber-for-online-shopping">
                                 <FontAwesomeIcon icon={faCodeBranch} style={{ color: "#ffffff" }} />
                             </a>
                         </div>

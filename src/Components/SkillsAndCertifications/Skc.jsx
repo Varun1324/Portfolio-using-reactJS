@@ -15,14 +15,11 @@ function Skc() {
         </div>
         <div className='list'>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
             <li>JavaScript</li>
             <li>Python</li>
             <li>Java</li>
             <li>Git</li>
             <li>React</li>
-            <li>Web Framework : Flask</li>
           </ul>
         </div>
       </div>
@@ -34,12 +31,10 @@ function Skc() {
         </div>
         <div className='list'>
           <ul>
-            <li>Web Developer Bootcamp 2022 - Udemy</li>
             <li>Python for Data Science - NPTEL</li>
             <li>Joy of Computing Python - NPTEL</li>
             <li>AWS Academy Cloud Foundations - AWS</li>
             <li>OCI 2023 Certified Architect Associate</li>
-            <li>Introduction to Cyber Security - Cisco</li>
           </ul>
         </div>
       </div>
