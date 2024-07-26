@@ -23,7 +23,7 @@ function Skc() {
           </ul>
         </div>
       </div>
-        <hr />
+      
       <div id="certifications">
         <div className='items'>
             <FontAwesomeIcon icon={faCertificate} style={{color: "#ffffff",}} id="icon"/>
