@@ -1,46 +1,42 @@
-import React from 'react';
-import styles from './HeroStyles.module.css';
-import Profile from '../../assets/Profile.png';
+import React from 'react'
+import { Button, Pane, Text, Heading, Paragraph } from 'evergreen-ui'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-function Hero() {
+import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { PhoneIcon, EnvelopeIcon } from 'evergreen-ui'
+import './HeroStyles.css';
+const Hero = () => {
     return (
-        <section id="hero" className={styles.container}>
-            <div className={styles.colorModeContainer}>
-                <img src={Profile} className={styles.hero} alt="Profile" />
-            </div>
-            <div className={styles.info}>
-                <h1>
-                    VARUN
-                    <br />
-                    KODAMANCHILI
-                </h1>
-                <h3>
-                    Aspiring Full stack developer
-                </h3>
-                <span>
-                    <a href="https://www.linkedin.com/in/varun-kodamanchili-01881b23b/">
-                        <FontAwesomeIcon icon={faLinkedin} style={{color: "#005799",}} className={styles.heroicons} />
-                    </a>
-                    <a href="https://github.com/Varun1324">
-                        <FontAwesomeIcon icon={faSquareGithub} style={{ color: "#ffffff", }} className={styles.heroicons} />
-                    </a>
-                </span>
-                <p className={styles.description}>To work in an environment which encourages me to succeed and grow professionally where I can utilize my skils and knowledge appropriately.</p>
-                <a href="https://github.com/Varun1324" download>
-                    <button>Resume</button>
-                </a>
-                <span>
-                    <FontAwesomeIcon icon={faEnvelope} style={{color: "#ffffff",}} />varunkodamanchili@gmail.com
-                </span>
-                <span>
-                    <FontAwesomeIcon icon={faPhone} style={{color: "#ffffff",}} />+91 9392671324
-                </span>
-            </div>
-        </section>
+        <div>
+            <Pane display="flex" alignItems="center" border="1px" height="20rem" justifyContent="center" padding="25px" elevation={0} borderRadius="10px" backgroundColor="blackAlpha.50" className="custom-pane">
+                <Pane elevation={1}><img src="https://res.cloudinary.com/durc5ydxo/image/upload/v1731398246/varun_tm8vap.jpg" alt="" width={250} height={250} className="inner-pane"/></Pane>
+                <Pane display="flex" flexDirection="column" marginLeft="50px">
+                    <Heading size={900} marginTop={10} color="white" id="text">
+                        Varun Kodamanchili
+                    </Heading>
+                    <Text marginTop="5px" size={100} fontWeight="bold" color="white">Aspiring Full stack developer</Text>
+                    <Paragraph marginTop={16} color="white" id="para">
+                        To work in an environment which encourages me to succeed and grow professionally where I can utilize my skils and knowledge appropriately.
+                    </Paragraph>
+                    <Pane display="flex" width="50" alignItems="center" marginTop={25} gap="15px">
+                        <a href="https://github.com/Varun1324" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faSquareGithub} size="2x" color='white' />
+                        </a>
+                        <a href="https://www.linkedin.com/in/varun-kodamanchili-01881b23b/" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faLinkedin} size="2x" color='white' />
+                        </a>
+                        <Button marginRight={16} appearance="primary" intent="success">
+                            Resume
+                        </Button>
+                    </Pane>
+                    <Pane marginTop={25}>
+                        <EnvelopeIcon size={15} color='white' margin="1px" /><Text color='white' id="text">   varunkodamanchili@gmail.com</Text>
+                    </Pane>
+                    <Pane marginTop={25}>
+                        <PhoneIcon size={15} color='white' margin="1px" /><Text color='white' id="text">+91 9392671324</Text>
+                    </Pane>
+                </Pane>
+            </Pane>
+        </div >
     )
 }
 
