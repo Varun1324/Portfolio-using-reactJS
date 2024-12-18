@@ -5,6 +5,9 @@ import { faChartBar } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3, faJs, faPython, faReact, faNode} from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
+import weather from '../../assets/weather.webp';
+import netflix from '../../assets/netflix.webp';
+import webscrap from '../../assets/webscrap.png';
 function Projects() {
     return (
         <div className='main-container'>
@@ -16,6 +19,7 @@ function Projects() {
                 <a href="http://varun1324.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" className='redirect'>
                     <div className="p1">
                         <h3>Weather Info WebApp</h3>
+                        <img src={weather} alt="" width={250} height={150}/>
                         <div className="prg">
                             Technologies used : <FontAwesomeIcon icon={faHtml5} style={{ color: "#ff7b00" }} id="symbols"/> <FontAwesomeIcon icon={faCss3} style={{ color: "#1a6eff" }} id="symbols"/>
                             <FontAwesomeIcon icon={faJs} style={{ color: "#fddd12" }} id="symbols"/>
@@ -34,6 +38,7 @@ function Projects() {
                 <a href="https://github.com/Varun1324/netflix-clone" target="_blank" rel="noopener noreferrer" className='redirect'>
                     <div className="p1">
                         <h3>Netflix Clone</h3>
+                        <img src={netflix} alt="" width={250} height={150}/>
                         <div className="prg">
                             Technologies Used : <FontAwesomeIcon icon={faReact} style={{ color: "#5291ff" }} id="symbols"/>
                             <FontAwesomeIcon icon={faNode} style={{ color: "#0aff54" }} id="symbols"/>
@@ -52,6 +57,7 @@ function Projects() {
                 <a href="https://github.com/Varun1324/Price-Grabber-for-online-shopping" target="_blank" rel="noopener noreferrer" className='redirect'>
                     <div className="p1">
                         <h3>Price-Grabber-for-online-shopping</h3>
+                        <img src={webscrap} alt="" width={250} height={150}/>
                         <div className="prg">
                             Technologies Used : <FontAwesomeIcon icon={faHtml5} style={{ color: "#ff7b00" }} id="symbols"/> <FontAwesomeIcon icon={faCss3} style={{ color: "#1a6eff" }} id="symbols"/> <FontAwesomeIcon icon={faPython} style={{ color: "#4b8bbe" }} id="symbols"/>
                         </div>

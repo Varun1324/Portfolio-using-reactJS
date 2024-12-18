@@ -21,7 +21,7 @@
 .p1 , .p2, .p3{
     margin: 20px 20px;
     width: 300px;
-    height: 300px;
+    height: fit-content;
     color: white;
     background-color: #0b090a;
     border: 1px solid whitesmoke;

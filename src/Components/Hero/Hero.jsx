@@ -2,13 +2,18 @@ import React from 'react'
 import { Button, Pane, Text, Heading, Paragraph } from 'evergreen-ui'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { PhoneIcon, EnvelopeIcon } from 'evergreen-ui'
+import { PhoneIcon, EnvelopeIcon, DocumentOpenIcon, DownloadIcon } from 'evergreen-ui'
 import './HeroStyles.css';
+import {
+    Popover,
+    Position,
+    Menu
+} from 'evergreen-ui';
 const Hero = () => {
     return (
         <div>
             <Pane display="flex" alignItems="center" border="1px" height="20rem" justifyContent="center" padding="25px" elevation={0} borderRadius="10px" backgroundColor="blackAlpha.50" className="custom-pane">
-                <Pane elevation={1}><img src="https://res.cloudinary.com/durc5ydxo/image/upload/v1731398246/varun_tm8vap.jpg" alt="" width={250} height={250} className="inner-pane"/></Pane>
+                <Pane elevation={1}><img src="https://res.cloudinary.com/durc5ydxo/image/upload/v1731398246/varun_tm8vap.jpg" alt="" width={250} height={250} className="inner-pane" /></Pane>
                 <Pane display="flex" flexDirection="column" marginLeft="50px">
                     <Heading size={900} marginTop={10} color="white" id="text">
                         Varun Kodamanchili
@@ -24,9 +29,22 @@ const Hero = () => {
                         <a href="https://www.linkedin.com/in/varun-kodamanchili-01881b23b/" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faLinkedin} size="2x" color='white' />
                         </a>
-                        <Button marginRight={16} appearance="primary" intent="success">
-                            Resume
-                        </Button>
+                        <Popover
+                            position={Position.BOTTOM_LEFT}
+                            content={
+                                <Menu>
+                                    <Menu.Group>
+                                        <Menu.Item
+                                            icon={DocumentOpenIcon}>
+                                            View
+                                        </Menu.Item>
+                                        <Menu.Item icon={DownloadIcon}>Download</Menu.Item>
+                                    </Menu.Group>
+                                </Menu>
+                            }
+                        >
+                            <Button marginRight={16} appearance="primary" intent="success">Resume</Button>
+                        </Popover>
                     </Pane>
                     <Pane marginTop={25}>
                         <EnvelopeIcon size={15} color='white' margin="1px" /><Text color='white' id="text">   varunkodamanchili@gmail.com</Text>
