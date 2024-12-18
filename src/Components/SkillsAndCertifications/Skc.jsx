@@ -19,7 +19,7 @@ function Skc() {
             <li>Python</li>
             <li>Java</li>
             <li>Git</li>
-            <li>React</li>
+            <li>Reactjs</li>
           </ul>
         </div>
       </div>
