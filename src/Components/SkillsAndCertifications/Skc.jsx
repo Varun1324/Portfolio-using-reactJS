@@ -32,6 +32,7 @@ function Skc() {
         <div className='list'>
           <ul>
             <li>Python for Data Science - NPTEL</li>
+            <li>Java Full Stack - Wipro</li>
             <li>Joy of Computing Python - NPTEL</li>
             <li>AWS Academy Cloud Foundations - AWS</li>
             <li>OCI 2023 Certified Architect Associate</li>
