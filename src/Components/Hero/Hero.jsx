@@ -13,7 +13,7 @@ const Hero = () => {
     return (
         <div>
             <Pane display="flex" alignItems="center" border="1px"  justifyContent="center" padding="25px" elevation={0} borderRadius="10px" backgroundColor="blackAlpha.50" className="custom-pane">
-                <Pane elevation={1}><img src="https://res.cloudinary.com/durc5ydxo/image/upload/v1731398246/varun_tm8vap.jpg" alt="" width={250} height={250} className="inner-pane" /></Pane>
+                <Pane elevation={1}><img src="https://res.cloudinary.com/durc5ydxo/image/upload/v1734781526/varun_pfrnz3.jpg" alt="" width={250} height={250} className="inner-pane" /></Pane>
                 <Pane display="flex" flexDirection="column" marginLeft="50px">
                     <Heading size={900} marginTop={10} color="white" id="text">
                         Varun Kodamanchili
